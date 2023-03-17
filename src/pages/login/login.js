@@ -1,7 +1,10 @@
 import React, { useContext } from 'react'
 import styled from 'styled-components'
 import { Button, Grid } from '@material-ui/core'
-import logo from './logo.png'
+// import logo from './logo.png'
+import LottiePizza from './lottiepizza.json'
+
+import Lottie from 'lottie-react'
 
 import { AuthContext } from '../../contexts/auth'
 
@@ -12,7 +15,8 @@ function Login() {
         <Container>
             <Grid container justify='center' spacing={10}>
                 <Grid item>
-                    <img style={{width: '100%'}} src={logo} alt='Logo'/>
+                    {/* <img style={{width: '100%'}} src={logo} alt='Logo'/> */}
+                    <Lottie animationData={LottiePizza} />
                 </Grid>
 
                 <Grid item xs={12} container justify='center'>                      
